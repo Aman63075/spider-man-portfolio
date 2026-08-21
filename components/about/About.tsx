@@ -79,7 +79,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen overflow-hidden bg-[#fefefefd] py-24"
+      className="relative min-h-screen overflow-hidden bg-[#fefefefd] py-16 sm:py-20 md:py-24"
     >
       {/* LEFT HANGING WEB */}
       <motion.div
@@ -94,7 +94,7 @@ export default function About() {
 }}
         className="absolute top-[-150px] left-[-5%] md:left-[2%] flex flex-col items-center pointer-events-none"
       >
-        <div className="h-[250px] md:h-[350px] w-px bg-gradient-to-b from-transparent to-gray-300" />
+        <div className="h-[200px] sm:h-[250px] md:h-[350px] w-px bg-gradient-to-b from-transparent to-gray-300" />
 
         <motion.div
           animate={{ rotate: [0,360], y: [0, -8, 0] }}
@@ -109,7 +109,7 @@ export default function About() {
             alt="web"
             width={500}
             height={500}
-            className="w-[400px] md:w-[400px] object-contain opacity-20"
+            className="w-[280px] sm:w-[340px] md:w-[400px] object-contain opacity-20"
           />
         </motion.div>
       </motion.div>
@@ -128,7 +128,7 @@ export default function About() {
 }}
         className="absolute top-[-80px] right-0 md:right-20 z-10 flex flex-col items-center pointer-events-none"
       >
-        <div className="h-[200px] md:h-[300px] w-px bg-gradient-to-b from-transparent to-gray-300" />
+        <div className="h-[170px] sm:h-[200px] md:h-[300px] w-px bg-gradient-to-b from-transparent to-gray-300" />
 
         <motion.div
           animate={{ rotate: [0,360], y: [0, 8, 0] }}
@@ -143,13 +143,13 @@ export default function About() {
             alt="web"
             width={500}
             height={500}
-            className="w-[300px] md:w-[300px] object-contain opacity-20 -mt-8"
+            className="w-[220px] sm:w-[260px] md:w-[300px] object-contain opacity-20 -mt-8"
           />
         </motion.div>
       </motion.div>
 
-      <div className="container mx-auto px-6 md:px-12 lg:px-24">
-        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12 lg:gap-20">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-10 sm:gap-12 lg:gap-20">
           {/* LEFT CONTENT */}
           <div className="flex-1 relative z-20">
             <motion.div
@@ -175,13 +175,13 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.2, delay: 1.6 }}
-              className="mt-5 text-5xl md:text-6xl lg:text-7xl font-black tracking-tight uppercase italic text-[#07142B]"
+              className="mt-5 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight uppercase italic text-[#07142B]"
               style={{ textShadow: "2px 2px 0 rgb(252,165,165)" }}
             >
               MR. AMAN.
             </motion.h2>
 
-            <div className="mt-8 flex flex-col gap-6 text-gray-700 text-base md:text-lg leading-relaxed max-w-xl font-medium">
+            <div className="mt-8 flex flex-col gap-5 text-sm text-gray-700 sm:gap-6 sm:text-base md:text-lg leading-relaxed max-w-xl font-medium">
               <motion.p
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -219,7 +219,7 @@ export default function About() {
                 Primary Tech Stack
               </h3>
 
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-2 sm:gap-3">
                 {TECH_STACK.map((tech, index) => (
                   <TechPill
                     key={tech}
@@ -233,7 +233,7 @@ export default function About() {
           </div>
 
           {/* RIGHT HANGING PROFILE */}
-          <div className="relative flex min-h-[550px] w-full flex-1 items-start justify-center pt-0">
+          <div className="relative flex min-h-[460px] w-full flex-1 items-start justify-center pt-0 sm:min-h-[550px]">
             <motion.div
               initial={{ y: -750, opacity: 0, rotate: 0 }}
               whileInView={{ y: 0, opacity: 1, rotate: 0 }}
@@ -248,7 +248,7 @@ export default function About() {
               className="group z-30 flex flex-col items-center"
             >
               {/* Thread */}
-              <div className="h-[200px] w-[2px] bg-gradient-to-b from-transparent via-[#A31515]/60 to-[#A31515] md:h-[350px]" />
+              <div className="h-[180px] w-[2px] bg-gradient-to-b from-transparent via-[#A31515]/60 to-[#A31515] sm:h-[200px] md:h-[350px]" />
 
               {/* Hanging Circle */}
               <motion.div

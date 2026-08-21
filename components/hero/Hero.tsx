@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-screen overflow-hidden bg-[#F7F6F2]"
+      className="relative h-[100svh] overflow-hidden bg-[#F7F6F2] md:h-screen"
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
         setPos({
@@ -42,13 +42,13 @@ export default function Hero() {
     
 
       {/* Left Text */}
-      <div className="relative z-30 flex min-h-screen items-center px-6 md:px-20">
+      <div className="relative z-30 flex min-h-screen items-center px-4 sm:px-6 md:px-20">
         <div className="max-w-xl">
           <motion.span
             initial={{ opacity: 0, x: -80 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mb-3 block text-[13px] font-bold uppercase tracking-[.2em] text-red-500"
+            className="mb-3 block text-[11px] font-bold uppercase tracking-[.2em] text-red-500 sm:text-[13px]"
           >
             Your Friendly Neighborhood Engineer
           </motion.span>
@@ -57,7 +57,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: -80 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1 }}
-              className="text-[56px] md:text-[90px] font-black italic uppercase leading-[.9] "
+              className="text-[48px] font-black italic uppercase leading-[.9] sm:text-[56px] md:text-[90px] "
               style={{
                 textShadow:
                   "4px 4px 0 #EF4444, 7px 7px 0 #A31515",
@@ -73,7 +73,7 @@ export default function Hero() {
               initial={{ opacity: 0, x: 35 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1.5 }}
-              className="mt-8 flex flex-wrap gap-4"
+              className="mt-6 flex flex-wrap gap-3 sm:mt-8 sm:gap-4"
             >
               <a
                 href="#projects"

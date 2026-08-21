@@ -33,7 +33,7 @@ function SkillCard({
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="group relative flex items-center justify-between overflow-hidden rounded-xl border border-gray-200 bg-[#F9FAFB]/90 px-5 py-4 cursor-pointer"
+      className="group relative flex items-center justify-between overflow-hidden rounded-xl border border-gray-200 bg-[#F9FAFB]/90 px-4 py-3 cursor-pointer sm:px-5 sm:py-4"
       style={{
         opacity: 1,
         transform: "translateY(0)",
@@ -114,7 +114,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative w-full overflow-hidden border-t border-gray-200 bg-white px-6 py-20"
+      className="relative w-full overflow-hidden border-t border-gray-200 bg-white px-4 py-16 sm:px-6 sm:py-20"
     >
       {/* Background Web */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
@@ -123,7 +123,7 @@ export default function Skills() {
           alt="web"
           width={700}
           height={700}
-          className="h-[700px] w-[700px] object-contain opacity-[0.04] mix-blend-multiply"
+          className="h-[480px] w-[480px] object-contain opacity-[0.04] mix-blend-multiply sm:h-[560px] sm:w-[560px] md:h-[700px] md:w-[700px]"
         />
       </div>
 
@@ -150,7 +150,7 @@ export default function Skills() {
           </span>
 
           <h2
-            className="text-4xl font-black uppercase italic text-[#111827] md:text-5xl"
+            className="text-3xl font-black uppercase italic text-[#111827] sm:text-4xl md:text-5xl"
             style={{ textShadow: "2px 2px 0 #FCA5A5" }}
           >
             TECHNICAL SKILLS.

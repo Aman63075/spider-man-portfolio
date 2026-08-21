@@ -10,7 +10,7 @@ export default function Contact() {
     <>
       <section
         id="contact"
-        className="relative overflow-hidden border-t border-gray-200 bg-white px-6 py-20"
+        className="relative overflow-hidden border-t border-gray-200 bg-white px-4 py-16 sm:px-6 sm:py-20"
       >
         {/* Background Web */}
 <div className="pointer-events-none absolute inset-0 flex items-end justify-start z-0">
@@ -19,7 +19,7 @@ export default function Contact() {
     alt="web"
     width={700}
     height={700}
-    className="w-[700px] h-[700px] object-contain opacity-[0.04] mix-blend-multiply"
+    className="w-[480px] h-[480px] object-contain opacity-[0.04] mix-blend-multiply sm:w-[560px] sm:h-[560px] md:w-[700px] md:h-[700px]"
   />
 </div>
         {/* Background Web */}
@@ -29,7 +29,7 @@ export default function Contact() {
             alt="web"
             width={700}
             height={700}
-            className="h-[700px] w-[700px] object-contain opacity-[0.04] mix-blend-multiply"
+            className="h-[480px] w-[480px] object-contain opacity-[0.04] mix-blend-multiply sm:h-[560px] sm:w-[560px] md:h-[700px] md:w-[700px]"
           />
         </div>
 
@@ -81,7 +81,7 @@ export default function Contact() {
             </span>
 
             <h2
-              className="text-4xl font-black uppercase italic text-[#111827] md:text-5xl"
+              className="text-3xl font-black uppercase italic text-[#111827] sm:text-4xl md:text-5xl"
               style={{ textShadow: "2px 2px 0 #FCA5A5" }}
             >
               CONTACT.
@@ -91,7 +91,7 @@ export default function Contact() {
           </div>
 
           {/* Form */}
-          <div className="mx-auto max-w-2xl rounded-2xl border border-gray-200 bg-[#F9FAFB]/90 p-9">
+          <div className="mx-auto max-w-2xl rounded-2xl border border-gray-200 bg-[#F9FAFB]/90 p-5 sm:p-7 md:p-9">
             {!submitted ? (
               <form
                 onSubmit={(e) => {
@@ -164,7 +164,7 @@ export default function Contact() {
       </section>
 
       {/* Footer */}
-      <footer className="m-0 border-t border-gray-200 bg-white py-4 text-center text-sm text-gray-500">
+      <footer className="m-0 border-t border-gray-200 bg-white px-4 py-4 text-center text-sm text-gray-500">
         © 2026 Aman Shukla. All rights reserved.
       </footer>
     </>

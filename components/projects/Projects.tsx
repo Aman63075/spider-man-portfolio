@@ -34,7 +34,7 @@ function ProjectCard({ project, index }: any) {
       href="#"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="relative block overflow-hidden rounded-2xl border border-gray-200 bg-[#F9FAFB]/90 p-6 no-underline transition-all duration-300"
+      className="relative block overflow-hidden rounded-2xl border border-gray-200 bg-[#F9FAFB]/90 p-5 no-underline transition-all duration-300 sm:p-6"
       style={{
         borderColor: hover ? "#A31515" : "#E5E7EB",
         boxShadow: hover
@@ -93,7 +93,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative w-full overflow-hidden border-t border-gray-200 bg-white px-6 py-20"
+      className="relative w-full overflow-hidden border-t border-gray-200 bg-white px-4 py-16 sm:px-6 sm:py-20"
     >
       {/* Background Web */}
       <div className="pointer-events-none absolute inset-0 flex items-start justify-end">
@@ -102,7 +102,7 @@ export default function Projects() {
           alt="web"
           width={700}
           height={700}
-          className="h-[700px] w-[700px] object-contain opacity-[0.04] mix-blend-multiply"
+          className="h-[480px] w-[480px] object-contain opacity-[0.04] mix-blend-multiply sm:h-[560px] sm:w-[560px] md:h-[700px] md:w-[700px]"
         />
       </div>
 
@@ -125,7 +125,7 @@ export default function Projects() {
           </span>
 
           <h2
-            className="text-4xl font-black uppercase italic text-[#111827] md:text-5xl"
+            className="text-3xl font-black uppercase italic text-[#111827] sm:text-4xl md:text-5xl"
             style={{ textShadow: "2px 2px 0 #FCA5A5" }}
           >
             PROJECTS.
